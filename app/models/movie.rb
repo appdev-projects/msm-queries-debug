@@ -15,11 +15,11 @@
 
 class Movie < ApplicationRecord
   def Movie.last_decade
-    # return Movie.where({ year > 10.years.ago.year })
+    # return Movie.where({ created_at > 10.years.ago.year })
   end
 
   def Movie.short
-    # return Movie.where(duration < 90)
+    # return Movie.where(:duration => 90)
   end
 
   def Movie.long
