@@ -2,7 +2,7 @@
 
 ## Debug Query Methods
 
-There are methods defined in the following models: `1. movie.rb`, `director.rb`, and `actor.rb`.
+There are methods defined in the following models: `movie.rb`, `director.rb`, and `actor.rb`.
 
 Currently, none of them work. If you look in each of the mentioned model files, you'll see that methods have been defined, but the contents of the methods are commented out. Each method is broken in some way.
 
