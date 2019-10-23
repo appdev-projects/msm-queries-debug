@@ -14,9 +14,6 @@
 #
 
 class Movie < ApplicationRecord
-  def Movie.last_decade
-    # return Movie.where({ created_at > 10.years.ago.year })
-  end
 
   def Movie.short
     # return Movie.where(:duration => 90)
@@ -26,12 +23,16 @@ class Movie < ApplicationRecord
     # return Movie.where(duration > 180)
   end
 
-  def director
-    # return Director.where({ :director_id => self.id })
+  def Movie.last_decade
+    # return Movie.where({ created_at > 10.years.ago.year })
   end
-
+  
   def characters
     # return Character.where({ :id => movie_id })
+  end
+
+  def director
+    # return Director.where({ :director_id => self.id })
   end
 
   def cast
